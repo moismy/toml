@@ -1,0 +1,67 @@
+# Sample stellar.toml
+
+FEDERATION_SERVER="https://api.moismy.com/federation"
+AUTH_SERVER="https://api.moismy.com/auth"
+DEPOSIT_SERVER="https://api.moismy.com"
+SIGNING_KEY="GBEEA3CQIZBVKV5UIUPKZND3AVPQ44ULDVQVKYWRTKZA5ZLJ43QPRIAL"
+
+
+OUR_VALIDATORS=[
+"$nelisky1",
+"GCY5PTXGK673HJNLNOHHC4RSZL4XY23637JHGPGNI5GGWLZVB7JR3BOG"
+]
+
+DESIRED_BASE_FEE=100
+DESIRED_MAX_TX_PER_LEDGER=400
+
+KNOWN_PEERS=[
+"192.168.0.1",
+"core-testnet1.stellar.org",
+"core-testnet2.stellar.org:11290",
+"2001:0db8:0100:f101:0210:a4ff:fee3:9566"
+]
+
+HISTORY=[
+"http://history.stellar.org/prd/core-live/core_live_001/",
+"http://history.stellar.org/prd/core-live/core_live_002/",
+"http://history.stellar.org/prd/core-live/core_live_003/"
+]
+
+[DOCUMENTATION]
+ORG_NAME="moisamy"
+ORG_DBA="mois"
+ORG_URL="https://www.moismy.com"
+ORG_LOGO="https://www.moismy.com/logoo.png"
+ORG_DESCRIPTION="get airdrop soon"
+ORG_PHYSICAL_ADDRESS="123 Sesame St., New York, NY, 12345" 
+ORG_PHYSICAL_ADDRESS_ATTESTATION="https://www.moismy.com/address_attestation.jpg"
+ORG_PHONE_NUMBER="1 (123)-456-7890"
+ORG_PHONE_NUMBER_ATTESTATION="https://www.moismy.com/phone_attestation.jpg"
+ORG_KEYBASE="accountname"
+ORG_TWITTER="orgtweet"
+ORG_GITHUB="orgcode"
+ORG_OFFICIAL_EMAIL="mois.moismy.com"
+
+[[PRINCIPALS]]
+name="Jane Jedidiah Johnson"
+email="jane@domain.com"
+keybase="crypto_jane"
+twitter="crypto_jane"
+github="crypto_jane"
+id_photo_hash="be688838ca8686e5c90689bf2ab585cef1137c999b48c70b92f67a5c34dc15697b5d11c982ed6d71be1e1e7f7b4e0733884aa97c3f7a339a8ed03577cf74be09"
+verification_photo_hash="016ba8c4cfde65af99cb5fa8b8a37e2eb73f481b3ae34991666df2e04feb6c038666ebd1ec2b6f623967756033c702dde5f423f7d47ab6ed1827ff53783731f7"
+
+[[CURRENCIES]]
+code="USD"
+issuer="GCZJM35NKGVK47BB4SPBDV25477PZYIYPVVG453LPYFNXLS3FGHDXOCM"
+display_decimals=2
+
+[[CURRENCIES]]
+code="BTC"
+issuer="GAOO3LWBC4XF6VWRP5ESJ6IBHAISVJMSBTALHOQM2EZG7Q477UWA6L7U"
+display_decimals=7
+anchor_asset_type="crypto"
+anchor_asset="BTC"
+redemption_instructions="Use SEP6 with our federation server"
+collateral_addresses=["2C1mCx3ukix1KfegAY5zgQJV7sanAciZpv"]
+collateral_address_signatures=["304502206e21798a42fae0e854281abd38bacd1aeed3ee3738d9e1446618c4571d10"]
